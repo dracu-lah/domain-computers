@@ -85,7 +85,7 @@ export default function Services() {
       className="py-24 bg-slate-50 dark:bg-slate-900/50 relative overflow-hidden"
       id="services"
     >
-      <div className="absolute -bottom-40 -right-40 opacity-10 pointer-events-none transform -rotate-12 z-0">
+      <div className="absolute -bottom-40 -right-40 opacity-20 pointer-events-none transform -rotate-12 z-0">
         <span className="material-symbols-outlined text-[40rem] lg:text-[50rem] text-slate-400 dark:text-slate-600">
           settings_suggest
         </span>
@@ -108,8 +108,8 @@ export default function Services() {
               key={index}
               className="group relative bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 dark:border-white/5 overflow-hidden"
             >
-              <div className="absolute -bottom-12 -right-12 opacity-[0.05] group-hover:opacity-10 transition-opacity transform -rotate-12 group-hover:scale-110 group-hover:rotate-0 duration-700 pointer-events-none">
-                <span className="material-symbols-outlined text-[15rem] text-primary">
+              <div className="absolute -bottom-24 -right-24 group-hover:opacity-20 transition-all transform -rotate-12 group-hover:scale-110 group-hover:rotate-0 duration-700 pointer-events-none">
+                <span className="material-symbols-outlined text-[20rem] text-primary/10">
                   {service.icon}
                 </span>
               </div>

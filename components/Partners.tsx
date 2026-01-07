@@ -1,3 +1,21 @@
+const topRowBrands = [
+  { name: "Dell", logo: "https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" },
+  { name: "HP", logo: "https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" },
+  { name: "Acer", logo: "https://upload.wikimedia.org/wikipedia/commons/0/00/Acer_2011.svg" },
+  { name: "Hikvision", logo: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Hikvision_logo.svg" },
+  { name: "CP Plus", logo: "https://logo.clearbit.com/cpplusworld.com" },
+  { name: "eSSL", logo: "https://logo.clearbit.com/esslsecurity.com" },
+];
+
+const bottomRowBrands = [
+  { name: "Intel", logo: "https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_logo_2023.svg" },
+  { name: "AMD", logo: "https://upload.wikimedia.org/wikipedia/commons/7/7c/AMD_Logo.svg" },
+  { name: "Asus", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2e/ASUS_Logo.svg" },
+  { name: "Gigabyte", logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Gigabyte_Technology_logo_20080107.svg" },
+  { name: "Canon", logo: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Canon_logo.svg" },
+  { name: "Epson", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Epson_logo.svg" },
+];
+
 export default function Partners() {
   return (
     <div
@@ -11,69 +29,33 @@ export default function Partners() {
         <div className="space-y-12">
           {/* Top Row */}
           <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-10">
-            <img
-              alt="Dell"
-              className="h-7 md:h-10 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/dell.com"
-            />
-            <img
-              alt="HP"
-              className="h-8 md:h-12 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/hp.com"
-            />
-            <img
-              alt="Acer"
-              className="h-7 md:h-10 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/acer.com"
-            />
-            <img
-              alt="Hikvision"
-              className="h-6 md:h-9 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/hikvision.com"
-            />
-            <img
-              alt="CP Plus"
-              className="h-6 md:h-9 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://www.cpplusworld.com/assets/images/logo.png"
-            />
-            <img
-              alt="eSSL"
-              className="h-8 md:h-12 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://www.esslsecurity.com/assets/images/logo.png"
-            />
+            {topRowBrands.map((brand) => (
+              <div
+                key={brand.name}
+                className="bg-white p-3 rounded-xl shadow-sm hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  alt={brand.name}
+                  className="h-6 md:h-8 w-auto object-contain"
+                  src={brand.logo}
+                />
+              </div>
+            ))}
           </div>
           {/* Bottom Row */}
           <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-10">
-            <img
-              alt="Intel"
-              className="h-8 md:h-11 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/intel.com"
-            />
-            <img
-              alt="AMD"
-              className="h-6 md:h-9 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/amd.com"
-            />
-            <img
-              alt="Asus"
-              className="h-6 md:h-9 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/asus.com"
-            />
-            <img
-              alt="Gigabyte"
-              className="h-5 md:h-8 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/gigabyte.com"
-            />
-            <img
-              alt="Canon"
-              className="h-7 md:h-10 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/canon.com"
-            />
-            <img
-              alt="Epson"
-              className="h-8 md:h-11 w-auto object-contain hover:scale-110 transition-transform duration-300"
-              src="https://logo.clearbit.com/epson.com"
-            />
+            {bottomRowBrands.map((brand) => (
+              <div
+                key={brand.name}
+                className="bg-white p-3 rounded-xl shadow-sm hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  alt={brand.name}
+                  className="h-6 md:h-8 w-auto object-contain"
+                  src={brand.logo}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-[40rem] h-[40rem] bg-blue-500/20 rounded-full blur-[100px] opacity-30 pointer-events-none"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] text-slate-900 dark:text-white opacity-20 mask-image-gradient"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none z-0">
-        <span className="text-[10vw] lg:text-[12vw] font-display font-black text-slate-200/50 dark:text-slate-800/50 uppercase tracking-tighter leading-none whitespace-nowrap select-none">
+        <span className="text-[10vw] lg:text-[12vw] font-display font-black text-slate-300/40 dark:text-slate-700/40 uppercase tracking-tighter leading-none whitespace-nowrap select-none">
           DOMAIN COMPUTERS
         </span>
       </div>
