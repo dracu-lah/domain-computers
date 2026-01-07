@@ -5,16 +5,17 @@ import { useState } from "react";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
     service: "Refurbished Laptops",
     message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const { name, phone, service, message } = formData;
-    const text = `*Inquiry from Website*\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`;
-    const whatsappLink = `https://wa.me/919809079666?text=${encodeURIComponent(text)}`;
+    const { name, service, message } = formData;
+    const text = `*Inquiry from Website*\n\nName: ${name}\nService: ${service}\nMessage: ${message}`;
+    const whatsappLink = `https://wa.me/919809079666?text=${encodeURIComponent(
+      text
+    )}`;
     window.open(whatsappLink, "_blank");
   };
 
@@ -100,41 +101,22 @@ export default function Contact() {
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-8 sm:p-10 lg:p-16 border-t lg:border-t-0 lg:border-l border-white/10">
               <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label
-                      className="block text-sm font-medium text-slate-300 mb-2"
-                      htmlFor="name"
-                    >
-                      Name
-                    </label>
-                    <input
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                      id="name"
-                      placeholder="John Doe"
-                      type="text"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label
-                      className="block text-sm font-medium text-slate-300 mb-2"
-                      htmlFor="phone"
-                    >
-                      Phone
-                    </label>
-                    <input
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                      id="phone"
-                      placeholder="+91"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
+                <div>
+                  <label
+                    className="block text-sm font-medium text-slate-300 mb-2"
+                    htmlFor="name"
+                  >
+                    Name
+                  </label>
+                  <input
+                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    id="name"
+                    placeholder="John Doe"
+                    type="text"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <div>
                   <label
