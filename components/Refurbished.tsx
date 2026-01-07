@@ -3,19 +3,19 @@ import Link from "next/link";
 export default function Refurbished() {
   return (
     <section
-      className="py-24 bg-white dark:bg-background-dark relative overflow-hidden"
+      className="py-16 sm:py-24 bg-white dark:bg-background-dark relative overflow-hidden"
       id="refurbished"
     >
       <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-700 to-transparent"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-start mb-20">
-          <div className="lg:col-span-5 sticky top-24">
+          <div className="lg:col-span-5 lg:sticky lg:top-24">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-blue-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white aspect-video lg:aspect-auto">
                 <img
                   alt="High quality refurbished laptop"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY6EKeazy1gEua7NNOnUHbxeCZN5ZOcxxmSKtoMDRQ-r-YiKSOm1sfeT6JCTe5HfMNVcAu3YBulYKT40N32uWNLY06Woubkr2hnUCCDDO9nPrBoUxh070tJNO1SLsNZN5gLvHJ5uYpgFeVv90s5jpvWMQtEeQR82cWtUltUjkZNT-5QEl9ZBoJef2nYMmQxJrk_BM3HLMm0tpqZ9xGZGxA2zskHaZLStJw0R7DBaKZUjIeODoRuc0cP1uOSbBOz_XXoT6asSroMa4"
                 />
               </div>
@@ -40,11 +40,11 @@ export default function Refurbished() {
             </div>
           </div>
           <div className="lg:col-span-7 lg:pl-10 mt-12 lg:mt-0">
-            <h2 className="text-4xl lg:text-5xl font-display font-bold text-slate-900 dark:text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 dark:text-white mb-6 leading-tight">
               Premium Refurbished. <br />
               <span className="text-primary">Performance Guaranteed.</span>
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
               Why pay full price? Get enterprise-grade performance at a fraction
               of the cost. Our certified refurbished laptops undergo a rigorous
               20-point quality check to ensure they meet our high standards.
@@ -108,7 +108,7 @@ export default function Refurbished() {
               </div>
             </div>
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
                 Featured Models
               </h3>
               {/* Featured Model 1: Lenovo */}
@@ -126,7 +126,7 @@ export default function Refurbished() {
                       <span className="text-xs font-bold text-primary uppercase tracking-wide">
                         Business Class
                       </span>
-                      <h4 className="text-xl font-bold text-slate-900 dark:text-white">
+                      <h4 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
                         Lenovo Thinkpad Series
                       </h4>
                     </div>
@@ -138,7 +138,7 @@ export default function Refurbished() {
                     Legendary durability and keyboard. Perfect for coding,
                     typing, and heavy office work.
                   </p>
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     <span className="px-2 py-1 bg-slate-100 dark:bg-white/5 rounded text-xs text-slate-600 dark:text-slate-400 font-medium">
                       Core i5/i7
                     </span>
@@ -166,7 +166,7 @@ export default function Refurbished() {
                       <span className="text-xs font-bold text-primary uppercase tracking-wide">
                         Professional Choice
                       </span>
-                      <h4 className="text-xl font-bold text-slate-900 dark:text-white">
+                      <h4 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
                         Dell Latitude Series
                       </h4>
                     </div>
@@ -178,7 +178,7 @@ export default function Refurbished() {
                     Reliable workhorse with excellent display quality and robust
                     security features.
                   </p>
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     <span className="px-2 py-1 bg-slate-100 dark:bg-white/5 rounded text-xs text-slate-600 dark:text-slate-400 font-medium">
                       HD Display
                     </span>
