@@ -124,6 +124,99 @@ export default function Services() {
               </ul>
             </div>
           </div>
+          {/* Service 4: Vocational Training */}
+          <div className="group relative bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 dark:border-white/5 overflow-hidden">
+            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity transform group-hover:scale-110 duration-500">
+              <span className="material-symbols-outlined text-[10rem] text-primary">
+                school
+              </span>
+            </div>
+            <div className="relative z-10">
+              <div className="w-14 h-14 bg-orange-50 dark:bg-orange-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300 text-orange-600 dark:text-orange-400">
+                <span className="material-symbols-outlined text-3xl">
+                  school
+                </span>
+              </div>
+              <h3 className="text-2xl font-display font-bold text-slate-900 dark:text-white mb-4">
+                Vocational Training
+              </h3>
+              <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                Industry-standard computer training institute. Learn Tally, GST, Hardware, Networking, and Programming.
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-center text-sm text-slate-500 dark:text-slate-400">
+                  <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></span>{" "}
+                  Job-Oriented Courses
+                </li>
+                <li className="flex items-center text-sm text-slate-500 dark:text-slate-400">
+                  <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></span>{" "}
+                  Practical Labs
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* Service 5: Peripherals & Sales */}
+          <div className="group relative bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 dark:border-white/5 overflow-hidden">
+            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity transform group-hover:scale-110 duration-500">
+              <span className="material-symbols-outlined text-[10rem] text-primary">
+                shopping_cart
+              </span>
+            </div>
+            <div className="relative z-10">
+              <div className="w-14 h-14 bg-pink-50 dark:bg-pink-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-pink-500 group-hover:text-white transition-colors duration-300 text-pink-600 dark:text-pink-400">
+                <span className="material-symbols-outlined text-3xl">
+                  shopping_cart
+                </span>
+              </div>
+              <h3 className="text-2xl font-display font-bold text-slate-900 dark:text-white mb-4">
+                Sales & Peripherals
+              </h3>
+              <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                Wide range of laptops, desktops, and accessories. Authorized dealer for major brands like HP, Dell, and Epson.
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-center text-sm text-slate-500 dark:text-slate-400">
+                  <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mr-2"></span>{" "}
+                  Genuine Parts
+                </li>
+                <li className="flex items-center text-sm text-slate-500 dark:text-slate-400">
+                  <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mr-2"></span>{" "}
+                  Warranty Support
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* Service 6: Software Solutions */}
+          <div className="group relative bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 dark:border-white/5 overflow-hidden">
+            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity transform group-hover:scale-110 duration-500">
+              <span className="material-symbols-outlined text-[10rem] text-primary">
+                settings_suggest
+              </span>
+            </div>
+            <div className="relative z-10">
+              <div className="w-14 h-14 bg-indigo-50 dark:bg-indigo-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-500 group-hover:text-white transition-colors duration-300 text-indigo-600 dark:text-indigo-400">
+                <span className="material-symbols-outlined text-3xl">
+                  settings_suggest
+                </span>
+              </div>
+              <h3 className="text-2xl font-display font-bold text-slate-900 dark:text-white mb-4">
+                Software & AMC
+              </h3>
+              <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                Complete software support including OS installation, antivirus, and Annual Maintenance Contracts (AMC) for business.
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-center text-sm text-slate-500 dark:text-slate-400">
+                  <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-2"></span>{" "}
+                  On-site Support
+                </li>
+                <li className="flex items-center text-sm text-slate-500 dark:text-slate-400">
+                  <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-2"></span>{" "}
+                  Business Plans
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

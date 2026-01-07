@@ -20,22 +20,22 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <Link
-                className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-[#1877F2] hover:text-white transition-all group"
+                className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg shadow-[#1877F2]/20"
                 href="#"
               >
-                <img src="/facebook.svg" alt="Facebook" className="w-5 h-5 fill-current group-hover:invert group-hover:brightness-0 transition-all" />
+                <img src="/facebook.svg" alt="Facebook" className="w-5 h-5 brightness-0 invert" />
               </Link>
               <Link
-                className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-[#E4405F] hover:text-white transition-all group"
+                className="w-10 h-10 rounded-full bg-[#E4405F] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg shadow-[#E4405F]/20"
                 href="#"
               >
-                <img src="/instagram.svg" alt="Instagram" className="w-5 h-5 fill-current group-hover:invert group-hover:brightness-0 transition-all" />
+                <img src="/instagram.svg" alt="Instagram" className="w-5 h-5 brightness-0 invert" />
               </Link>
               <Link
-                className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-[#0A66C2] hover:text-white transition-all group"
+                className="w-10 h-10 rounded-full bg-[#0A66C2] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg shadow-[#0A66C2]/20"
                 href="#"
               >
-                <img src="/linkedin.svg" alt="LinkedIn" className="w-5 h-5 fill-current group-hover:invert group-hover:brightness-0 transition-all" />
+                <img src="/linkedin.svg" alt="LinkedIn" className="w-5 h-5 brightness-0 invert" />
               </Link>
             </div>
           </div>
