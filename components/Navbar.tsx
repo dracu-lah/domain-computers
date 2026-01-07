@@ -22,28 +22,28 @@ export default function Navbar() {
           </div>
           <div className="hidden md:flex items-center space-x-1">
             <Link
-              className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-semibold transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-white/5"
+              className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-medium transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-white/5"
               href="#services"
             >
               Services
             </Link>
             <Link
-              className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-semibold transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-white/5"
+              className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-medium transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-white/5"
               href="#refurbished"
             >
               Refurbished
             </Link>
             <Link
-              className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-semibold transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-white/5"
+              className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-medium transition-colors rounded-lg hover:bg-slate-50 dark:hover:bg-white/5"
               href="#brands"
             >
               Partners
             </Link>
             <Link
-              className="ml-4 bg-slate-900 dark:bg-white hover:bg-primary dark:hover:bg-primary text-white dark:text-slate-900 hover:text-white dark:hover:text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-primary/20 transition-all transform hover:-translate-y-0.5"
+              className="ml-4 bg-primary text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transition-all transform hover:-translate-y-0.5 active:scale-95"
               href="#contact"
             >
-              Get in Touch
+              Contact Support
             </Link>
           </div>
           <div className="md:hidden flex items-center">

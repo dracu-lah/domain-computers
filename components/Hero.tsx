@@ -17,15 +17,13 @@ export default function Hero() {
               Trusted IT Partner Since 2010
             </div>
             <h1 className="text-5xl lg:text-7xl font-display font-extrabold text-slate-900 dark:text-white leading-[1.1] mb-6 tracking-tight">
-              Technology <br />
+              Expert Computer <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">
-                Reimagined.
+                Solutions in Thrissur.
               </span>
             </h1>
             <p className="text-lg lg:text-xl text-slate-600 dark:text-slate-400 max-w-lg mb-10 leading-relaxed">
-              Empowering Thrissur with premium IT sales, expert repairs, and
-              sustainable refurbished solutions. Experience technology that
-              works for you.
+              Your one-stop destination for premium laptop sales, chip-level service, and certified refurbished devices. Experience technology that empowers your work.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -38,13 +36,13 @@ export default function Hero() {
                 </span>
               </Link>
               <a
-                className="flex items-center justify-center px-8 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-white rounded-2xl font-bold hover:bg-slate-50 dark:hover:bg-white/10 transition-all"
-                href="tel:9809079666"
+                className="flex items-center justify-center px-8 py-4 bg-[#25D366] text-white rounded-2xl font-bold shadow-lg shadow-green-500/20 hover:shadow-green-500/30 hover:bg-[#20bd5a] transition-all transform hover:-translate-y-1"
+                href="https://wa.me/919809079666"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <span className="material-symbols-outlined mr-2 text-primary">
-                  call
-                </span>
-                9809 07 9666
+                <img src="/whatsapp.svg" alt="WhatsApp" className="w-6 h-6 mr-2 brightness-0 invert" />
+                Chat on WhatsApp
               </a>
             </div>
             <div className="mt-12 flex items-center gap-6 text-sm font-medium text-slate-500 dark:text-slate-500">
@@ -68,7 +66,7 @@ export default function Hero() {
               <img
                 alt="Modern IT workspace setup"
                 className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD25OYYBkPu3OJkgOV8MD075ibhs9kRFnNxQ7zZkR7a8xhtACH1pSf_6iYfmVlniEcDySJpXPskY30fEvtPev9PsrHGuJXelUEKUlml4gdxfaxhRjpxQnF4C98hWnyqSITu4ndckrPdlAT08s5SKmn66HxagXZcwvlxqxPkzBij0uo2XOeNI2oIyPzm9LBUqMH3Gu3E8a3W6xgu76s9CD2RkP0HHkxnCAXU2QOyaIU3Vi37RQzTtAomdriNkvrHCCoqjqtgWie2NDE"
+                src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1200&q=80"
               />
               <div className="absolute bottom-6 left-6 right-6 z-20 glass-panel p-4 rounded-2xl flex items-center justify-between">
                 <div className="flex items-center gap-3">
