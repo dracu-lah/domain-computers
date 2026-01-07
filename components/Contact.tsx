@@ -13,8 +13,9 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const { name, phone, service, message } = formData;
-    const mailtoLink = `mailto:info@domaincomputers.in?subject=Inquiry about ${service}&body=Name: ${name}%0D%0APhone: ${phone}%0D%0AService: ${service}%0D%0AMessage: ${message}`;
-    window.location.href = mailtoLink;
+    const text = `*Inquiry from Website*\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`;
+    const whatsappLink = `https://wa.me/919809079666?text=${encodeURIComponent(text)}`;
+    window.open(whatsappLink, "_blank");
   };
 
   const handleChange = (
