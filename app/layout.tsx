@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -91,6 +92,7 @@ export default function RootLayout({
         className={`${outfit.variable} ${plusJakartaSans.variable} font-body bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased selection:bg-primary selection:text-white`}
       >
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );
