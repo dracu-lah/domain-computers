@@ -1,21 +1,21 @@
 export default function Contact() {
   return (
     <section
-      className="py-24 bg-white dark:bg-background-dark relative"
+      className="py-16 sm:py-24 bg-white dark:bg-background-dark relative"
       id="contact"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-slate-900 dark:bg-slate-800 rounded-[2.5rem] overflow-hidden shadow-2xl">
+        <div className="relative bg-slate-900 dark:bg-slate-800 rounded-3xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl">
           <div className="absolute inset-0">
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
           </div>
           <div className="relative z-10 grid lg:grid-cols-2">
-            <div className="p-10 lg:p-16 flex flex-col justify-center">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
+            <div className="p-8 sm:p-10 lg:p-16 flex flex-col justify-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-white mb-6">
                 Let's Discuss Your IT Needs
               </h2>
-              <p className="text-slate-300 mb-10 text-lg">
+              <p className="text-slate-300 mb-8 sm:mb-10 text-base sm:text-lg">
                 Whether it's a bulk laptop order, a complex networking setup, or
                 a simple repair inquiry, we're here to help.
               </p>
@@ -31,7 +31,7 @@ export default function Contact() {
                       Call for Immediate Support
                     </p>
                     <a
-                      className="text-xl font-bold text-white hover:text-primary transition-colors"
+                      className="text-lg sm:text-xl font-bold text-white hover:text-primary transition-colors"
                       href="tel:9809079666"
                     >
                       9809 07 9666
@@ -49,7 +49,7 @@ export default function Contact() {
                       Email Your Query
                     </p>
                     <a
-                      className="text-xl font-bold text-white hover:text-primary transition-colors"
+                      className="text-lg sm:text-xl font-bold text-white hover:text-primary transition-colors break-all"
                       href="mailto:info@domaincomputers.in"
                     >
                       info@domaincomputers.in
@@ -64,16 +64,16 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm mb-1">Visit Us</p>
-                    <p className="text-white font-medium">
+                    <p className="text-white font-medium text-base sm:text-lg">
                       Thrissur &amp; Malappuram Districts
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-10 lg:p-16 border-t lg:border-t-0 lg:border-l border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm p-8 sm:p-10 lg:p-16 border-t lg:border-t-0 lg:border-l border-white/10">
               <form action="#" className="space-y-5">
-                <div className="grid md:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label
                       className="block text-sm font-medium text-slate-300 mb-2"

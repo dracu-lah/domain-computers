@@ -13,7 +13,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.domaincomputers.in"),
+  metadataBase: new URL("https://domaincomputers.vercel.app"),
   title: {
     default: "Domain Computers - Complete IT Solutions in Thrissur",
     template: "%s | Domain Computers",
@@ -30,10 +30,7 @@ export const metadata: Metadata = {
     "IT Solutions Thrissur",
     "Domain Computers Patturaikkal",
   ],
-  alternates: {
-    canonical: "/",
-  },
-  authors: [{ name: "Abdul Gafoor", url: "https://www.domaincomputers.in" }],
+  authors: [{ name: "Abdul Gafoor", url: "https://domaincomputers.vercel.app" }],
   creator: "Domain Computers",
   publisher: "Domain Computers",
   formatDetection: {
@@ -45,7 +42,7 @@ export const metadata: Metadata = {
     title: "Domain Computers - Complete IT Solutions in Thrissur",
     description:
       "Expert computer sales, repairs, and IT training in Thrissur. Trusted since 2010.",
-    url: "https://www.domaincomputers.in",
+    url: "https://domaincomputers.vercel.app",
     siteName: "Domain Computers",
     images: [
       {
