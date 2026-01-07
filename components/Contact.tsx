@@ -1,4 +1,30 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    service: "Refurbished Laptops",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const { name, phone, service, message } = formData;
+    const mailtoLink = `mailto:info@domaincomputers.in?subject=Inquiry about ${service}&body=Name: ${name}%0D%0APhone: ${phone}%0D%0AService: ${service}%0D%0AMessage: ${message}`;
+    window.location.href = mailtoLink;
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
   return (
     <section
       className="py-16 sm:py-24 bg-white dark:bg-background-dark relative"
@@ -72,7 +98,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-8 sm:p-10 lg:p-16 border-t lg:border-t-0 lg:border-l border-white/10">
-              <form action="#" className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label
@@ -86,6 +112,9 @@ export default function Contact() {
                       id="name"
                       placeholder="John Doe"
                       type="text"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                   <div>
@@ -100,6 +129,9 @@ export default function Contact() {
                       id="phone"
                       placeholder="+91"
                       type="tel"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
@@ -113,6 +145,8 @@ export default function Contact() {
                   <select
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all appearance-none"
                     id="service"
+                    value={formData.service}
+                    onChange={handleChange}
                   >
                     <option className="bg-slate-800 text-white">
                       Refurbished Laptops
@@ -143,6 +177,9 @@ export default function Contact() {
                     id="message"
                     placeholder="Tell us about your requirements..."
                     rows={3}
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
                   ></textarea>
                 </div>
                 <button
