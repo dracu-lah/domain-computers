@@ -92,11 +92,36 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm mb-1">Visit Us</p>
-                    <p className="text-white font-medium text-base sm:text-lg">
-                      Thrissur &amp; Malappuram Districts
-                    </p>
+                    <a
+                      href="https://maps.app.goo.gl/tQYfb8fodg5kB24F8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white font-medium text-base sm:text-lg hover:text-primary transition-colors"
+                    >
+                      Patturaikkal, Thrissur
+                    </a>
                   </div>
                 </div>
+              </div>
+              <div className="mt-8 rounded-2xl overflow-hidden h-48 border border-white/10 relative group">
+                <iframe
+                  title="Domain Computers Location"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  scrolling="no"
+                  marginHeight={0}
+                  marginWidth={0}
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=76.2088%2C10.5345%2C76.2128%2C10.5385&amp;layer=mapnik&amp;marker=10.5365%2C76.2108"
+                  className="grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                ></iframe>
+                <a
+                  href="https://maps.app.goo.gl/tQYfb8fodg5kB24F8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 z-20"
+                  aria-label="View on Google Maps"
+                ></a>
               </div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-8 sm:p-10 lg:p-16 border-t lg:border-t-0 lg:border-l border-white/10">
